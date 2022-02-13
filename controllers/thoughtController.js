@@ -42,7 +42,7 @@ const thoughtController = {
         })
         .then(dbUserData => {
             if (!dbUserData) {
-                res.status(404).json({ message: 'No user found with the provided username' }
+                res.status(404).json({ message: 'No user found with the provided username' });
                 return;
             }
             res.json(dbUserData);
